@@ -121,7 +121,7 @@ class Population(Population):
             if key1==key2:
                 continue
 
-            d = self.metric_func(genome1.data, genome2.data)
+            d = self.metric_func(genome1.novelty, genome2.novelty)
             distances[key2] = d
 
         return distances
